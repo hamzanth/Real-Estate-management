@@ -1,0 +1,3 @@
+bedroom_choices = {
+    
+}
