@@ -6,6 +6,7 @@ from realtors.models import Realtor
 # Create your views here.
 def index(request):
     listings = Listing.objects.all().order_by('-list_date').filter(is_published=True)[:3]
+    print("this is the index page")
     context = {
         'listings': listings
     }
